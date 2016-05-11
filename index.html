@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <link rel="stylesheet" href="game/theme/main/main.css" media="all"/>
+        <script src="vendor/phaser/build/phaser.js"></script>
+        <script src="game/engine/state/space.js"></script>
+        <script src="game/entity/gui.js"></script>
+        <script src="game/entity/minimap.js"></script>
+        <script src="game/entity/system.js"></script>
+        <script src="game/entity/ship.js"></script>
+        <script src="game/entity/player.js"></script>
+        <script src="game/entity/planet.js"></script>
+        <script src="game/entity/star.js"></script>
+    </head>
+    <body oncontextmenu="return false;">
+        <div id="shipInfo" style="position:absolute;display:none;background:cornsilk;">
+            <p>Информация о корабле</p>
+        </div>
+        <script>
+            var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.CANVAS, 'game', Space);
+        </script>
+    </body>
+</html>
